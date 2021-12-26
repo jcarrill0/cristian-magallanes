@@ -1,35 +1,83 @@
 :root {
   --white-gradient: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
-  --animationSpeed: 40s;
+  --animationSpeed: 30s;
 }
 
 /* Animation */
 
 @-webkit-keyframes scroll {
-    0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
+  to {
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 @keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
+  to {
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
 .slider {
   position: relative;
-  /* background: rgba(255, 255, 255, 0); */
+  /* background: white; */
+  background: rgba(255, 255, 255, 0);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 20vh;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider::before, 
+.slider::after {
+  position: absolute;
+  background: var(--white-gradient);
+  content: "";
+  height: 20vh;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  display: inline-flex;
+  -moz-animation: scroll 5var(--animationSpeed) infinite linear;
+  -webkit-animation: scroll var(--animationSpeed) infinite linear;
+  animation: scroll var(--animationSpeed) infinite linear;
+  height: 100%;
+  width: auto;
+}
+
+.slider .slide {
+  height: 100%;
+  width: 250px;
+}
+
+.slider .slide img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+/* 
+.slider {
+  position: relative;
   background: white;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
   height: 100px;
@@ -68,4 +116,7 @@
 .slider .slide {
   height: 100px;
   width: 250px;
-}
+} */
+
+
+  /* background: rgba(255, 255, 255, 0); */
