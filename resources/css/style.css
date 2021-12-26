@@ -1,0 +1,453 @@
+/*
+    Autor: CRISTOPHER DAVIS RAMIREZ SALVO
+    Empresa: YOUR BEST DEV
+    Web: https://yourbestdev.com
+    Correo: contact@yourbestdev.net
+*/
+
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/* DECLARACION DE VARIABLES GLOBALES */
+
+:root {
+    --ff-primary: 'Saira Semi Condensed', sans-serif;
+    --fz-section-title: 3rem;
+    --clr-first: #0E49A2;
+    --clr-first-alt: rgb(12, 65, 144);
+    --clr-second: #0B82C6;
+    --clr-third: #1DC8C8;
+    --clr-light: #eeeeee;
+    --clr-dark: #141618;
+}
+
+
+/* CSS GLOBAL */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0E49A2;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    transition: 5ms;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h2.section-title {
+    font-size: var(--fz-section-title);
+    font-weight: 600;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-heading {
+    background-color: #0E49A2;
+    width: 100%;
+    padding: 2.6rem 0 3.5rem;
+    /* margin: 40px 0px;
+    padding: 60px; */
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-heading {
+    font-weight: 500;
+    font-size: 1.5rem;
+    max-width: 60%;
+}
+
+/* Botones */
+
+.btn {
+    width: 60%;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    font-size: 1.4rem;
+    padding: .5rem ;
+    color: var(--clr-light);
+}
+
+.btn:hover {
+    border: 2px solid var(--clr-light);
+}
+
+.btn-primario {
+    background: #1DC8C8;
+}
+
+.btn-cotizar {
+    margin-top: 30px;
+    background: #1DC8C8;
+}
+
+.btn-submit {
+    width: 25%;
+    height: 2.8rem;
+    border: 2px solid var(--clr-light);
+    border-radius: unset;
+    font-weight: 600;
+    top: 45%;
+    left: 100%;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+/* CSS DEL MENU*/
+
+.nav{
+    /* font-family: 'Saira Semi Condensed', sans-serif; */
+    font-weight: 600;
+    color: #fff;
+    font-size: 30px;
+    padding: 1rem 0;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* SECCION DE INICIO */
+
+#inicio {
+    display: flex;
+    width: 100%;
+}
+
+#inicio div {
+    width: 50%;
+}
+
+.inicio-rigth{
+    /* background-color: #0C4190; */
+    padding: 80px 60px;
+}
+
+.inicio-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    padding-left: 50px;
+}
+
+.inicio-left h1{
+    /* font-family: 'Saira Semi Condensed', sans-serif; */
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 40px;
+}
+
+.inicio-left p{
+    /* font-family: 'Saira Semi Condensed', sans-serif; */
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+/* .btn-cotizar{
+    margin-top: 30px;
+    padding: 5px;
+    width: 120px;
+    background: #1DC8C8;
+    border-radius: 50px;
+    font-size: 20px;
+} */
+
+/* SOBRE NOSOTROS */
+
+#about{
+    display: flex;
+    background-color: #fff;
+    height: 100vh;
+    background-image: url(../img/rigth-about.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+#about .content-about{
+    width: 70%;
+}
+.content-about{
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content-about p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* SERVICIOS */
+
+#services {
+    background-color: #0C4190;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.6rem 0;
+}
+
+/* .header-services{
+    background-color: #0E49A2;
+    width: 100%;
+    margin: 40px 0px;
+    padding: 60px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* .header-services p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    max-width: 60%;
+} */
+
+/* .cards-services{
+    max-width: 1200px;
+} */
+
+.contenedor-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 60px;
+    gap: 40px;
+    text-align: center;
+    color: white;
+}
+.card-ind-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    background-color: #0B82C6;
+    min-height: 450px;
+    margin-bottom: 20px;
+}
+.card-ind-service p{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: start;
+}
+.contenedor-cards .colum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedor-cards .colum h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.contenedor-cards .colum p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 2.6rem 0;
+    text-align: center;
+}
+
+.contact h2 {
+    color: var(--clr-light);
+    padding: 3.5rem 0;
+}
+
+.banner-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background: url(../img/business-man-show-increase-market-share-investment.jpg) no-repeat center top;
+    background-size: cover;
+    margin: 1.5rem 0 2.3rem;
+}
+
+.banner-contact::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(12, 65, 144, 0.65);
+}
+
+.banner-contact .info-contact {
+    z-index: 1;
+}
+
+.banner-contact .info-contact h3 {
+    font-size: 2.1rem;
+    margin-bottom: 3.2rem;
+}
+
+.banner-contact .info-contact a {
+   padding: .5rem 3rem;
+   font-size: 1.4rem;
+   font-weight: 600;
+   cursor: pointer;
+  /* transition: all 0.1s ease-in-out; */
+}
+.banner-contact .info-contact a:hover {
+    border: 2px solid var(--clr-light);
+}
+
+
+
+/* FORMULARIO */
+
+.contact h3 {
+    color: var(--clr-light);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    margin: .5rem 0 1rem;
+}
+
+.section-form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.formulario {
+    max-width: 61%;
+}
+
+.formulario .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.formulario .campo label {
+    color: var(--clr-light);
+    font-size: 1.3rem;
+    text-align: left;
+    margin: .2rem 0;
+}
+
+.formulario .campo input[type="text"] {
+    height: 2.8rem;
+    padding-left: .7rem;
+    border: 2px solid var(--clr-light);
+    background-color: transparent;
+    outline: none;
+    transition: 0.2s; 
+}
+
+.formulario .campo input[type="text"]:focus {
+    border: 2px solid var(--clr-light); 
+}
+
+/* FOOTER */
+
+.footer {
+    color: var(--clr-light);
+    padding: 2rem 0;
+}
+
+.footer .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    /* column-gap: 3rem; */
+}
+.footer .widget {
+    margin: .5rem 0;
+}
+
+.footer .widget h3 {
+    margin-bottom: 1rem;
+}
+
+.footer .widget a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: .5rem;
+    cursor: pointer;
+}
+
+.footer .info-contact p {
+    margin-bottom: .5rem;
+}
+
+.footer .info-contact span {
+    display: block;
+}
+
+
+
+
+/* 
+.bt-latir {
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    position: absolute;
+    display: flex;
+  }
+  
+  .bt-latir::before, .bt-latir::after {
+    content:"";
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    border: 10px solid gray;
+    border-radius:100%;
+    animation: latido linear 3s infinite;
+  }
+  
+  .bt-latir::after {
+    animation-delay: -1.5s;
+  }
+  
+  @keyframes latido {
+    0% { width:70px; height:70px; border:10px solid gray; }
+    100% { width:120px; height:120px; border:10px solid transparent; }
+  }
+  
+ */

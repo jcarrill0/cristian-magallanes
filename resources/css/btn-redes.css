@@ -1,0 +1,39 @@
+#btn-mas{
+    display: none;
+}
+.content-redes{
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    z-index: 999;
+}
+.redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: #fff;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+}
+.redes a:hover{
+    background: #fff;
+    color: #fff;
+}
+.redes a{
+    margin-bottom: 40px;
+    visibility: visible;
+}
+.btn-mas label{
+    cursor: pointer;
+    background: #fff;
+    font-size: 23px;
+}
+#btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+}
