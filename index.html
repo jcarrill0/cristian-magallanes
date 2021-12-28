@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristian Magallanes - Asesor financiero</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="resources/css/style.css">
     <link rel="stylesheet" href="resources/css/btn-redes.css">
     <link rel="stylesheet" href="resources/css/slider.css">
@@ -156,18 +155,18 @@ En mi experiencia he logrado contribuir al crecimiento y desarrollo de las perso
         </div>
         <div class="section-form">
             <h3>Inicia el crecimiento que necesitas</h3>
-            <form action="" class="formulario">
+            <form class="formulario" id="formulario">
                 <div class="campo">
                     <label for="nombre">Nombres y Apellido*</label>
-                    <input type="text" id="nombre">
+                    <input type="text" name="nombre" id="nombre">
                 </div>
                 <div class="campo">
                     <label for="nombre">Celular*</label>
-                    <input type="text" id="celular">
+                    <input type="text" name="celular" id="celular">
                 </div>
                 <div class="campo position-relative">
                     <label for="nombre">Ingresa tu correo electrónico*</label>
-                    <input type="text" id="email">
+                    <input type="text" name="email" id="email">
                     <input type="submit" value="Enviar" class="btn btn-submit position-absolute">
                 </div>
             </form>
@@ -210,11 +209,6 @@ En mi experiencia he logrado contribuir al crecimiento y desarrollo de las perso
     </footer>
 </body>
 
-<script>
-    let slider = document.querySelector(".slider .slide-track");
-
-    slider.innerHTML += slider.innerHTML;
-
-</script>
+<script src="./resources/js/app.js"></script>
 
 </html>
