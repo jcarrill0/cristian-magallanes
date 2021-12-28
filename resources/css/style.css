@@ -105,6 +105,7 @@ h2.section-title {
     font-weight: 600;
     top: 45%;
     left: 100%;
+    background-color: transparent;
 }
 
 .btn-submit:hover {
@@ -121,25 +122,73 @@ h2.section-title {
 
 /* CSS DEL MENU*/
 
-.nav{
-    /* font-family: 'Saira Semi Condensed', sans-serif; */
-    font-weight: 600;
-    color: #fff;
-    font-size: 30px;
-    padding: 1rem 0;
+.header {
+    padding: 1.3rem 0;
 }
 
-.nav ul{
-    display: flex;
-    justify-content: space-around;
-    
+.nav {
+    /* font-family: 'Saira Semi Condensed', sans-serif; */
+    font-weight: 600;
+    font-size: 1.5rem;
 }
+
+.nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav ul li {
+    padding-top: .5rem;
+    text-align: center;
+}
+
+.nav ul a {
+    position: relative;
+    /* color: var(--clr-light); */
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* opacity: 1;
+    transition: opacity 0.3s cubic-bezier(.51, .092, .24, 1); */
+}
+
+.nav ul li a::after {
+    --scale: 0;
+    content: '';
+    position: absolute;
+    margin-top: .1rem;
+    left: 0; 
+    right: 0;
+    top: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, #73fac8, var(--clr-third));
+    transform: scaleX(var(--scale)); 
+    transform-origin: center center;
+    transition: transform .5s cubic-bezier(.51, .092, .24, 1);
+}
+
+/* .nav ul li:hover a {
+    opacity: .8;
+} */
+
+.nav ul li:hover a::after {
+    --scale: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        justify-content: unset;
+    }
+}
+
 
 /* SECCION DE INICIO */
 
 #inicio {
     display: flex;
-    width: 100%;
+    width: calc(100vw - 10vw);
 }
 
 #inicio div {
