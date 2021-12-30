@@ -47,11 +47,48 @@
                 <div id="myModal" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p style="color: black;">Some text in the Modal.</p>
-                        <div class="contact-form">
-                            <form>
-                                <h3>formulario</h3>
+                        <span class="close"></span>
+                        <div class="cotizacion-form-wrapper">
+                            <form class="cotizacion-form">
+                                <div class="column">
+                                    <div class="campo">
+                                        <label for="nombre">Nombres y Apellido</label>
+                                        <input type="text" name="nombre">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="nombre">Razón Social</label>
+                                        <input type="text" name="razonSocial">
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="campo">
+                                        <label for="nombre">DNI</label>
+                                        <input type="text" name="dni" id="dni">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="nombre">RUIC</label>
+                                        <input type="text" name="ruic" id="ruic">
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="campo">
+                                        <label for="nombre">Celular</label>
+                                        <input type="text" name="celular">
+                                    </div>
+                                    <div class="campo">
+                                        <label for="nombre">Teléfono de contacto</label>
+                                        <input type="text" name="telefono">
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <div class="campo">
+                                        <label for="nombre">Correo electrónico</label>
+                                        <input type="text" name="email">
+                                    </div>
+                                </div>
+                                <div class="column">
+                                    <button class="btn btn-transparent">Cotizar</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -180,7 +217,7 @@ En mi experiencia he logrado contribuir al crecimiento y desarrollo de las perso
                 <div class="campo position-relative">
                     <label for="nombre">Ingresa tu correo electrónico*</label>
                     <input type="text" name="email" id="email">
-                    <input type="submit" value="Enviar" class="btn btn-submit position-absolute">
+                    <input type="submit" value="Enviar" class="btn btn-transparent btn-submit position-absolute">
                 </div>
             </form>
         </div>

@@ -53,9 +53,40 @@ img {
     height: auto;
 }
 
+input[type="text"] {
+    width: 100%;
+    height: 2.8rem;
+    padding-left: .7rem;
+    border: 2px solid var(--clr-light);
+    background-color: transparent;
+    outline: none;
+    transition: 0.2s; 
+    color: var(--clr-light);
+    font-family: var(--ff-primary);
+    font-size: 1.3rem;
+}
+
+label {
+    color: var(--clr-light);
+    font-size: 1.3rem;
+}
+
+input[type="text"]:focus {
+    border: 2px solid var(--clr-light); 
+}
+
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.border {
+    border: 1px solid red;
 }
 
 .section-heading {
@@ -94,6 +125,22 @@ img {
     border: 2px solid var(--clr-light);
 }
 
+.btn-transparent {
+    background-color: transparent;
+    border: 2px solid var(--clr-light);
+    border-radius: unset;
+    font-weight: 600;
+    width: 25%;
+    height: 2.8rem;
+    opacity: 1;
+}
+
+.btn-transparent:hover {
+    opacity: .8;
+}
+
+
+
 .btn-primario {
     background: #1DC8C8;
 }
@@ -104,18 +151,8 @@ img {
 }
 
 .btn-submit {
-    width: 25%;
-    height: 2.8rem;
-    border: 2px solid var(--clr-light);
-    border-radius: unset;
-    font-weight: 600;
     top: 45%;
     left: 100%;
-    background-color: transparent;
-}
-
-.btn-submit:hover {
-    cursor: pointer;
 }
 
 .position-relative {
@@ -230,6 +267,24 @@ img {
     font-weight: 300;
     font-size: 40px;
     margin-bottom: 30px;
+}
+
+/* FORMULARIO COTIZACION */
+
+.cotizacion-form-wrapper {
+    background-color: var(--clr-first);
+    padding: 1.5rem;
+    margin: 1.5rem;
+}
+
+.cotizacion-form-wrapper label {
+    display: block;
+}
+
+
+.cotizacion-form-wrapper .campo {
+    flex: 0 1 50%;
+    margin-bottom: 1rem;
 }
 
 
@@ -428,7 +483,7 @@ img {
     margin: .2rem 0;
 }
 
-.formulario .campo input[type="text"] {
+/* .formulario .campo input[type="text"] {
     height: 2.8rem;
     padding-left: .7rem;
     border: 2px solid var(--clr-light);
@@ -439,7 +494,7 @@ img {
 
 .formulario .campo input[type="text"]:focus {
     border: 2px solid var(--clr-light); 
-}
+} */
 
 /* FOOTER */
 
@@ -477,11 +532,6 @@ img {
 }
 
 
-
-
-.border-test {
-    border: 1px solid red;
-}
 
 /* 
 .bt-latir {

@@ -1,3 +1,9 @@
+:root {
+    --clr-second: #0B82C6;
+    --clr-first: #0E49A2;
+    --clr-third: #1DC8C8;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -14,43 +20,54 @@
   }
   
   /* Modal Content */
-  .modal-content {
+.modal-content {
     position: relative;
-    background-color: #fefefe;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    background-color: var(--clr-first);
+    width: 100%;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid var(--clr-second);
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
-  animation-name: animatetop;
-  animation-duration: 0.4s
+    -moz-animation: animatetop 0.4s;
+    -webkit-animation: animatetop 0.4s;
+    animation: animatetop 0.4s;
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-  from {top:-300px; opacity:0} 
-  to {top:0; opacity:1}
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
 }
 
 @keyframes animatetop {
-  from {top:-300px; opacity:0}
-  to {top:0; opacity:1}
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
 }
 
   
-  /* The Close Button */
-  .close {
+/* The Close Button */
+.close {
     color: #aaaaaa;
-    float: right;
-    font-size: 28px;
+    /* align-self: flex-end; */
+    font-size: 2.5rem;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+    /* margin-bottom: 10px; */
+    position: absolute;
+    top: -.3rem;
+    right: 1.3rem;
+}
+
+.close::before {
+    content: '×';
+}
+
+.close:hover,
+.close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-  }
+}
