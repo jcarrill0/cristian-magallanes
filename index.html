@@ -7,7 +7,8 @@
     <title>Cristian Magallanes - Asesor financiero</title>
     <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/btn-redes.css">
-    <link rel="stylesheet" href="./resources/css/slider.css">
+    <link rel="stylesheet" href="./resources/css/utilities/slider.css">
+    <link rel="stylesheet" href="./resources/css/utilities/modal.css">
 
 </head>
 <body>
@@ -35,14 +36,24 @@
     </header>
    
     <section id="inicio">
-        <div class="inicio-left">
+        <div class="inicio-left position-relative">
             <h1>Cristian Magallanes</h1>
             <p>Asesor Financiero</p>
 
-            <img src="resources/img/play.svg" alt="" width="70px">
-
-            <div>
-                <button class="btn btn-cotizar">Cotizar</button>
+            <div class="info-cotiza">
+                <img src="resources/img/play.svg" alt="played" width="70" height="70">
+                <button id="openModal" class="btn btn-cotizar">Cotizar</button>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p style="color: black;">Some text in the Modal.</p>
+                        <div class="contact-form">
+                            formulario
+                        </div>
+                    </div>
+                </div>
             </div>
                 
         </div>

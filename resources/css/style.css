@@ -48,6 +48,11 @@ h2.section-title {
     font-weight: 600;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .contenedor {
     max-width: 1200px;
     margin: 0 auto;
@@ -82,6 +87,7 @@ h2.section-title {
     font-size: 1.4rem;
     padding: .5rem ;
     color: var(--clr-light);
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -93,7 +99,7 @@ h2.section-title {
 }
 
 .btn-cotizar {
-    margin-top: 30px;
+    width: 30%;
     background: #1DC8C8;
 }
 
@@ -188,16 +194,19 @@ h2.section-title {
 
 #inicio {
     display: flex;
-    width: calc(100vw - 10vw);
+    width: 100%;
 }
 
-#inicio div {
-    width: 50%;
+.info-cotiza {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 }
 
 .inicio-rigth{
     /* background-color: #0C4190; */
     padding: 80px 60px;
+    flex: 0 1 50%;
 }
 
 .inicio-left{
@@ -206,6 +215,7 @@ h2.section-title {
     justify-content: center;
     color: #fff;
     padding-left: 50px;
+    flex: 0 1 50%;
 }
 
 .inicio-left h1{
@@ -221,6 +231,7 @@ h2.section-title {
     font-size: 40px;
     margin-bottom: 30px;
 }
+
 
 /* .btn-cotizar{
     margin-top: 30px;
@@ -467,6 +478,10 @@ h2.section-title {
 
 
 
+
+.border-test {
+    border: 1px solid red;
+}
 
 /* 
 .bt-latir {
