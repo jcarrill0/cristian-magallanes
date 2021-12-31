@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cristian Magallanes - Asesor financiero</title>
-    <link rel="stylesheet" href="./resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/btn-redes.css">
     <link rel="stylesheet" href="./resources/css/utilities/slider.css">
     <link rel="stylesheet" href="./resources/css/utilities/modal.css">
+    <link rel="stylesheet" href="./resources/css/style.css">
 
 </head>
 <body>
@@ -47,46 +47,38 @@
                 <div id="myModal" class="modal">
                     <!-- Modal content -->
                     <div class="modal-content">
-                        <span class="close"></span>
+                        <span class="close">&times;</span>
                         <div class="cotizacion-form-wrapper">
                             <form class="cotizacion-form">
-                                <div class="column">
-                                    <div class="campo">
-                                        <label for="nombre">Nombres y Apellido</label>
-                                        <input type="text" name="nombre">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="nombre">Razón Social</label>
-                                        <input type="text" name="razonSocial">
-                                    </div>
+                                <div class="campo">
+                                    <label for="nombre">Nombres y Apellido</label>
+                                    <input type="text" name="nombre">
                                 </div>
-                                <div class="column">
-                                    <div class="campo">
-                                        <label for="nombre">DNI</label>
-                                        <input type="text" name="dni" id="dni">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="nombre">RUIC</label>
-                                        <input type="text" name="ruic" id="ruic">
-                                    </div>
+                                <div class="campo">
+                                    <label for="nombre">Razón Social</label>
+                                    <input type="text" name="razonSocial">
                                 </div>
-                                <div class="column">
-                                    <div class="campo">
-                                        <label for="nombre">Celular</label>
-                                        <input type="text" name="celular">
-                                    </div>
-                                    <div class="campo">
-                                        <label for="nombre">Teléfono de contacto</label>
-                                        <input type="text" name="telefono">
-                                    </div>
+                                <div class="campo">
+                                    <label for="nombre">DNI</label>
+                                    <input type="text" name="dni" id="dni">
                                 </div>
-                                <div class="column">
-                                    <div class="campo">
-                                        <label for="nombre">Correo electrónico</label>
-                                        <input type="text" name="email">
-                                    </div>
+                                <div class="campo">
+                                    <label for="nombre">RUIC</label>
+                                    <input type="text" name="ruic" id="ruic">
                                 </div>
-                                <div class="column">
+                                <div class="campo">
+                                    <label for="nombre">Celular</label>
+                                    <input type="text" name="celular">
+                                </div>
+                                <div class="campo">
+                                    <label for="nombre">Teléfono de contacto</label>
+                                    <input type="text" name="telefono">
+                                </div>
+                                <div class="campo full-width">
+                                    <label for="nombre">Correo electrónico</label>
+                                    <input type="text" name="email">
+                                </div>
+                                <div class="border campo full-width center-x">
                                     <button class="btn btn-transparent">Cotizar</button>
                                 </div>
                             </form>
@@ -113,14 +105,15 @@ En mi experiencia he logrado contribuir al crecimiento y desarrollo de las perso
         </div>
     </section>
     
-    <section id="services">
+    <section id="services" class="services">
         <div class="section-heading">
             <h2 class="section-title">Mis servicios</h2>
             <p class="text-heading">Pongo mi dedicación y conocimiento profesional con cada nuevo cliente para desarrollar impulsos y gestiones financieras impecables.</p>
         </div>
-        <div class="cards-services contenedor">
+
+        <div class="contenedor">
             <div class="contenedor-cards">
-                <div class="colum">
+                <div class="card-colum">
                     <div class="card-ind-service">
                         <img src="resources/img/reviewing-financial-report-in-returning-on-investment-analysis 1.png" alt="">
                         <p>Impulsa tus finanzas a corto y largo plazo con el servicio de asesoría financiera.</p>
@@ -129,7 +122,7 @@ En mi experiencia he logrado contribuir al crecimiento y desarrollo de las perso
                     <p>Recomendado para empresas y persona naturales.</p>
                     <a href="" class="btn btn-primario">Cotizar</a>
                 </div>
-                <div class="colum">
+                <div class="card-colum">
                     <di v class="card-ind-service">
                         <img src="resources/img/home-salesman-stretches-holding-black-pen 1.png" alt="">
                         <p>Despeja tus dudas financieras y toma las mejores decisiones para hacer crecer tu dinero de una forma profesional.</p>
@@ -138,7 +131,7 @@ En mi experiencia he logrado contribuir al crecimiento y desarrollo de las perso
                     <p>Recomendado para persona naturales</p>
                     <a href="" class="btn btn-primario">Cotizar</a>
                 </div>
-                <div class="colum">
+                <div class="card-colum">
                     <div class="card-ind-service">
                         <img src="resources/img/stack-of-money-coin-with-trading-graph 1.png" alt="">
                         <p>Evalúo riesgos financieros y planifico los presupuestos de tu empresa, brindándo un mayor control en la administración de recursos.</p>
@@ -214,10 +207,12 @@ En mi experiencia he logrado contribuir al crecimiento y desarrollo de las perso
                     <label for="nombre">Celular*</label>
                     <input type="text" name="celular" id="celular">
                 </div>
-                <div class="campo position-relative">
+                <div class="campo">
                     <label for="nombre">Ingresa tu correo electrónico*</label>
-                    <input type="text" name="email" id="email">
-                    <input type="submit" value="Enviar" class="btn btn-transparent btn-submit position-absolute">
+                    <div class="campo-submit position-relative">
+                        <input type="email" name="email" id="email">
+                        <input type="submit" value="Enviar" class="btn btn-transparent btn-submit position-absolute">
+                    </div>
                 </div>
             </form>
         </div>

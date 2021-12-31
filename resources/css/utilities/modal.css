@@ -1,8 +1,8 @@
-:root {
+/* :root {
     --clr-second: #0B82C6;
     --clr-first: #0E49A2;
     --clr-third: #1DC8C8;
-}
+} */
 
 /* The Modal (background) */
 .modal {
@@ -26,11 +26,10 @@
     flex-direction: column;
     color: #000;
     background-color: var(--clr-first);
-    width: 100%;
+    width: 65%;
     margin: auto;
     padding: 20px;
     border: 1px solid var(--clr-second);
-    width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -moz-animation: animatetop 0.4s;
     -webkit-animation: animatetop 0.4s;
@@ -51,18 +50,12 @@
   
 /* The Close Button */
 .close {
+    position: absolute;
     color: #aaaaaa;
-    /* align-self: flex-end; */
     font-size: 2.5rem;
     font-weight: bold;
-    /* margin-bottom: 10px; */
-    position: absolute;
-    top: -.3rem;
-    right: 1.3rem;
-}
-
-.close::before {
-    content: '×';
+    top: 0;
+    right: 1.5rem;
 }
 
 .close:hover,

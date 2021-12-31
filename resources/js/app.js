@@ -1,3 +1,6 @@
+
+// SLIDER JS
+
 let slider = document.querySelector(".slider .slide-track");
 slider.innerHTML += slider.innerHTML;
 
