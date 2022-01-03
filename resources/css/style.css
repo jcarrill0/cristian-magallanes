@@ -22,7 +22,8 @@
     --clr-light: #eeeeee;
     --clr-dark: #141618;
 
-    --fs-title: 2.125rem; /* 34px */
+    /* --fs-title: 2.125rem; */
+    --fs-title: clamp(2.125rem, 1.3750rem + 3.3333vw, 3.125rem);
     --fs-subtitle: 1.25rem; /* 20px */
     --fs-subtitle-alt: 1.35rem;
     --fs-subtitle-alt-2: var(--fs-subtitle);
@@ -31,7 +32,7 @@
 
 @media screen and (min-width: 640px) {
     :root {
-        --fs-title: 3.125rem; /* 50px */
+        /* --fs-title: 3.125rem; */
         --fs-subtitle: 1.85rem; /* 29.6px */
         --fs-subtitle-alt: 1.95rem;
         --fs-subtitle-alt-2: 1.5rem;
@@ -197,7 +198,7 @@ a {
 .text-heading {
     text-align: justify;
     font-size: var(--fs-subtitle);
-    max-width: 85%;
+    width: 85%;
     margin: 1rem 0;
 }
 
@@ -244,7 +245,7 @@ a {
 }
 
 .btn-cotizar {
-    width: 30%;
+    padding: .5rem 2rem;
     background: #1DC8C8;
 }
 
@@ -257,6 +258,10 @@ a {
 @media screen and (min-width: 768px) {
     .btn {
         font-size: var(--fs-body);
+    }
+
+    .btn-cotizar {
+        padding: .5rem 2rem;    
     }
 }
 
@@ -343,12 +348,12 @@ a {
 .info-cotiza {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 .inicio-rigth{
     /* background-color: #0C4190; */
-    padding: 80px 60px;
+    padding: 4rem 1.7rem;
     flex: 0 1 50%;
 }
 
@@ -362,14 +367,16 @@ a {
 }
 
 .inicio-left h1{
-    /* font-family: 'Saira Semi Condensed', sans-serif; */
     font-weight: 600;
-    font-size: 60px;
-    line-height: 40px;
+    font-size: clamp(2.8rem, 1.7688rem + 3.25vw, 3.8rem);
+    /* font-size:calc(16px + (28 - 16) * ((100vw - 360px) / 1560));
+    font-size: clamp(16px, calc(16px + (28 - 16) * ((100vw - 360px) / 1560)), 28px); 
+    font-size: max (2.1875rem, min (1.9375rem + 1.1111111111vw, 2.8125rem)
+    */
+    line-height: 3.8rem;
 }
 
 .inicio-left p{
-    /* font-family: 'Saira Semi Condensed', sans-serif; */
     font-weight: 300;
     font-size: 40px;
     margin-bottom: 30px;
@@ -699,10 +706,12 @@ a {
 
 .footer .widget {
     text-align: center;
-    margin: 2.5rem;
+    margin: 1rem 3rem;
 }
 
 .footer .widget h3 {
+    width: 100%;
+    text-align: center;
     margin-bottom: 1rem;
 }
 
