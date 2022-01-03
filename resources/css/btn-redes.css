@@ -37,3 +37,9 @@
     transform: rotate(135deg);
     font-size: 25px;
 }
+
+@media screen and (max-width: 640px) {
+    .content-redes {
+        display: none;
+    }
+}
