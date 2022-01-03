@@ -36,6 +36,12 @@
     animation: animatetop 0.4s;
 }
 
+@media screen and (min-width: 480px) {
+    .modal-content {
+        width: 50%;
+    }
+}
+
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {top:-300px; opacity:0} 

@@ -16,6 +16,7 @@
     --fz-section-title: 3rem;
     --clr-first: #0c4190;
     --clr-first-alt: #0E49A2;
+    --clr-first-alt-2:#0C50FF;
     --clr-second: #0B82C6;
     --clr-third: #1DC8C8;
     --clr-light: #eeeeee;
@@ -61,10 +62,69 @@ input[type="email"] {
     border: 2px solid var(--clr-light);
     background-color: transparent;
     outline: none;
-    transition: 0.2s; 
     color: var(--clr-light);
     font-family: var(--ff-primary);
     font-size: 1.3rem;
+    transition: 0.2s; 
+}
+
+select {
+    width: 100%;
+    height: 2.8rem;
+    padding-left: .7rem;
+    border: 2px solid var(--clr-light);
+    background-color: var(--clr-first);
+    outline: none;
+    color: var(--clr-light);
+    font-family: var(--ff-primary);
+    font-size: 1.3rem;
+    transition: 0.2s; 
+
+    /* appearance: none; */
+}
+
+.custom-select {
+    position: relative;
+}
+
+.custom-arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background-color: var(--clr-first);
+    height: 100%;
+    width: 3em;
+    border: 2px solid var(--clr-light);
+    pointer-events: none;
+    color: var(--clr-light);
+}
+
+/* .custom-arrow::before {
+    position: absolute;
+    content: '\276F';
+    font-size: 1.8rem;
+    transform: rotate(90deg);
+    top: -5%;
+    left: 33.5%;
+} */
+
+.custom-arrow::before,
+.custom-arrow::after {
+    --size: 4px;
+
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 25%;
+    left: 33.5%;
+}
+
+.custom-arrow::before {
+    border-right: 0.2rem solid var(--clr-light);
+    border-top: 0.2rem solid var(--clr-light);
+    transform: rotate(135deg);
 }
 
 label {
@@ -176,6 +236,7 @@ a {
     /* font-family: 'Saira Semi Condensed', sans-serif; */
     font-weight: 600;
     font-size: 1.5rem;
+    padding: 0 1.3rem;
 }
 
 .nav ul {
@@ -272,12 +333,19 @@ a {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    #inicio {
+        flex-direction: column;
+    }
+}
+
+
 /* FORMULARIO COTIZACION */
 
 .cotizacion-form-wrapper {
     background-color: var(--clr-first);
     padding: 1.5rem;
-    margin: 1.5rem;
+    /* margin: 1.5rem; */
 }
 
 .cotizacion-form-wrapper label {
@@ -286,7 +354,7 @@ a {
 
 .cotizacion-form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem 1.4rem;
 }
 
@@ -346,7 +414,7 @@ a {
 /* SERVICIOS */
 
 .services {
-    /* background-color: #0C4190; */
+    padding-bottom: 5rem;
 }
 
 .services .section-heading {
@@ -379,7 +447,7 @@ a {
 
 .contenedor-cards{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     /* padding: 60px; */
     column-gap: 4rem;
     text-align: center;
@@ -391,7 +459,7 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin: 5rem 0;
+    margin: 1.5rem 0;
 }
 
 .card-ind-service {
@@ -420,6 +488,7 @@ a {
     font-size: 25px;
     font-weight: 500;
 }
+
 .contenedor-cards .card-colum p{
     font-size: 20px;
     font-weight: 500;
@@ -428,6 +497,12 @@ a {
 
 .card-colum .card-info {
     padding: 0 .9rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .contenedor-cards {
+        margin: 0 3rem;
+    }
 }
 
 /* CONTACT */

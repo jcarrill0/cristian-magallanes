@@ -51,34 +51,57 @@
                         <div class="cotizacion-form-wrapper">
                             <form class="cotizacion-form">
                                 <div class="campo">
+                                    <label for="service-option">Servicio</label>
+                                    <div class="custom-select">
+                                        <select name="service-option" id="service-option">
+                                            <option value="" selected disabled hidden>Seleccionar</option>
+                                            <option value="asesoria">Asesoría Financiera</option>
+                                            <option value="consultoria">Consultoría Financiera</option>
+                                            <option value="gestion">Gestión Financiera</option>
+                                        </select>
+                                        <span class="custom-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="campo">
+                                    <label for="client-option">Tipo de Cliente</label>
+                                    <div class="custom-select">
+                                        <select name="client-option" id="client-option">
+                                            <option value="" selected disabled hidden>Seleccionar</option>
+                                            <option value="persona">Persona</option>
+                                            <option value="empresa">Empresa</option>
+                                        </select>
+                                        <span class="custom-arrow"></span>
+                                    </div>
+                                </div>
+                                <div class="campo">
                                     <label for="nombre">Nombres y Apellido</label>
                                     <input type="text" name="nombre">
                                 </div>
                                 <div class="campo">
-                                    <label for="nombre">Razón Social</label>
-                                    <input type="text" name="razonSocial">
+                                    <label for="razon-social">Razón Social</label>
+                                    <input type="text" name="razon-social">
                                 </div>
                                 <div class="campo">
-                                    <label for="nombre">DNI</label>
+                                    <label for="dni">DNI</label>
                                     <input type="text" name="dni" id="dni">
                                 </div>
                                 <div class="campo">
-                                    <label for="nombre">RUIC</label>
+                                    <label for="ruic">RUIC</label>
                                     <input type="text" name="ruic" id="ruic">
                                 </div>
                                 <div class="campo">
-                                    <label for="nombre">Celular</label>
+                                    <label for="celular">Celular</label>
                                     <input type="text" name="celular">
                                 </div>
                                 <div class="campo">
-                                    <label for="nombre">Teléfono de contacto</label>
+                                    <label for="telefono">Teléfono de contacto</label>
                                     <input type="text" name="telefono">
                                 </div>
                                 <div class="campo full-width">
-                                    <label for="nombre">Correo electrónico</label>
+                                    <label for="email">Correo electrónico</label>
                                     <input type="text" name="email">
                                 </div>
-                                <div class="border campo full-width center-x">
+                                <div class="campo full-width center-x">
                                     <button class="btn btn-transparent">Cotizar</button>
                                 </div>
                             </form>
@@ -93,7 +116,7 @@
         </div>
     </section>
    
-    <section id="about">
+    <!-- <section id="about">
         <div class="content-about">
             <h2 class="section-title">Sobre mí</h2>
             <p>
@@ -103,7 +126,7 @@ En mi experiencia he logrado contribuir al crecimiento y desarrollo de las perso
 
             </p>
         </div>
-    </section>
+    </section> -->
     
     <section id="services" class="services">
         <div class="section-heading">
