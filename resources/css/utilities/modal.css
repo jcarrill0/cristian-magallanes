@@ -26,7 +26,7 @@
     flex-direction: column;
     color: #000;
     background-color: var(--clr-first);
-    width: 65%;
+    width: 80%;
     margin: auto;
     padding: 20px;
     border: 1px solid var(--clr-second);
@@ -38,7 +38,7 @@
 
 @media screen and (min-width: 480px) {
     .modal-content {
-        width: 50%;
+        width: 60%;
     }
 }
 
