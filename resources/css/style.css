@@ -22,21 +22,19 @@
     --clr-light: #eeeeee;
     --clr-dark: #141618;
 
-    /* --fs-title: 2.125rem; */
     --fs-title: clamp(2.125rem, 1.3750rem + 3.3333vw, 3.125rem);
-    --fs-subtitle: 1.25rem; /* 20px */
+    --fs-subtitle: 1.25rem; 
     --fs-subtitle-alt: 1.35rem;
     --fs-subtitle-alt-2: var(--fs-subtitle);
-    --fs-body: 1rem; /* 16px */
+    --fs-body: 1rem; 
 }
 
 @media screen and (min-width: 640px) {
     :root {
-        /* --fs-title: 3.125rem; */
-        --fs-subtitle: 1.85rem; /* 29.6px */
+        --fs-subtitle: 1.85rem; 
         --fs-subtitle-alt: 1.95rem;
-        --fs-subtitle-alt-2: 1.5rem;
-        --fs-body: 1.25rem; /* 22px */
+        --fs-subtitle-alt-2: 1.45rem;
+        --fs-body: 1.25rem; 
     }
 }
 
@@ -460,26 +458,37 @@ a {
 
 #about{
     display: flex;
-    background-color: #fff;
-    height: 100vh;
+    background-color: var(--clr-light);
+    height: 100%;
     background-image: url(../img/rigth-about.svg);
     background-repeat: no-repeat;
     background-position: right;
 }
-#about .content-about{
-    width: 70%;
-}
-.content-about{
-    padding: 60px;
+
+#about .content-about {
+    /* padding: 60px; */
     display: flex;
+    width: 70%;
+    padding: 2.3rem;
     flex-direction: column;
     justify-content: center;
 
 }
 
-.content-about p{
-    font-size: 20px;
+#about .content-about p {
+    font-size: var(--fs-subtitle-alt-2);
+    margin: .8rem 0;
     /* font-weight: 600; */
+}
+
+@media screen and (max-width: 780px) {
+    #about {
+        background-image: unset;
+    }
+
+    #about .content-about {
+        width: 100%;
+    }
 }
 
 /* SERVICIOS */
