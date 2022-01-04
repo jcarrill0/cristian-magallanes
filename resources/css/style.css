@@ -472,7 +472,7 @@ a {
     padding: 2.3rem;
     flex-direction: column;
     justify-content: center;
-
+    color: var(--clr-dark);
 }
 
 #about .content-about p {
