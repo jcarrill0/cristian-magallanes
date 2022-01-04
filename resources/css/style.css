@@ -42,6 +42,7 @@
 /* CSS GLOBAL */
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -274,7 +275,11 @@ a {
 /* CSS DEL MENU*/
 
 .header {
+    position: fixed;
     padding: 1.3rem 0;
+    width: 100%;
+    background-color: var(--clr-first);
+    z-index: 999;
 }
 
 .nav {
@@ -286,7 +291,17 @@ a {
     /* margin: 0 auto; */
 }
 
-.nav__label, .nav__input {
+#sign-one, #sign-two {
+    position: fixed;
+    cursor: pointer;
+    top: .5rem;
+    right: 1rem;
+    z-index: 9;
+}
+
+#sign-one,
+#sign-two, 
+.nav__input {
     display: none;
 }
 
@@ -337,32 +352,42 @@ a {
 }
 
 @media screen and (max-width: 768px) {
-    .nav__label {
+    .header {
         position: relative;
-        display: block;
-        cursor: pointer;
-        margin-left: auto;
-        z-index: 9;
+    }
+    
+    #sign-one {
+        display: block; 
     }
 
     .nav__menu {
         position: fixed;
         padding-top: 2.5rem;
-        top: 0;
         left: 0;
+        top:0;
         background: var(--clr-second);
         width: 100%;
-        height: 100vh;
+        height: 90vh;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         clip-path: circle(0.3% at 0 0);
-        transition: clip-path .9s ease-in-out;
+        transition: all .8s ease-in-out;
         z-index: 1;
     }
 
-    .nav__input:checked + .nav__menu {
+    .nav__input:checked ~ .nav__menu {
         clip-path: circle(141.5% at 0 0);
+        /* left: 0;
+        top:0; */
+    }
+
+    .nav__input:checked ~ label #sign-one {
+        display: none;
+    }
+
+    .nav__input:checked ~ label #sign-two {
+        display: block;
     }
 }
 
@@ -372,6 +397,7 @@ a {
 #inicio {
     display: flex;
     width: 100%;
+    padding: 2.5rem;
 }
 
 .info-cotiza {
@@ -414,6 +440,7 @@ a {
 @media screen and (max-width: 768px) {
     #inicio {
         flex-direction: column;
+        padding-top: 3rem;
     }
 }
 

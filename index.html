@@ -22,19 +22,20 @@
         </div>
     </div>
    
-    <header class="header contenedor">
-        <nav class="nav">
-            <label for="menu" class="nav__label">
-                <img src="./resources/img/menu.svg" class="nav__img">
-            </label>
+    <header class="header">
+        <nav class="nav contenedor">
             <input type="checkbox" id="menu" class="nav__input">
+            <label for="menu" class="nav__label">
+                <img src="./resources/img/menu.svg" class="nav__img_open" id="sign-one">
+                <img src="./resources/img/close-menu.svg" class="nav__img_close" id="sign-two">
+            </label>
             <ul class="nav__menu">
-                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="index.html" active>Inicio</a></li>
                 <li><a href="#about">Sobre mi</a></li>
-                <li><a href="#">Mis servicios</a></li>
-                <li><a href="#">Clientes</a></li>
+                <li><a href="#services">Mis servicios</a></li>
+                <li><a href="#client">Clientes</a></li>
                 <li><a href="#">Blog</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -90,8 +91,8 @@
                                     <input type="text" name="dni" id="dni">
                                 </div>
                                 <div class="campo">
-                                    <label for="ruic">RUIC</label>
-                                    <input type="text" name="ruic" id="ruic">
+                                    <label for="ruic">RUC</label>
+                                    <input type="text" name="ruc" id="ruc">
                                 </div>
                                 <div class="campo">
                                     <label for="celular">Celular</label>
@@ -212,7 +213,7 @@
         </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2 class="section-title">Contactá conmigo</h2>
         <div class="banner-contact position-relative">
            <div class="info-contact">
