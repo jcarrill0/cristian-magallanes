@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./resources/css/style.css">
 
 </head>
-<body>
+<body class="clr-blue-alt">
     <div class="content-redes">
         <div class="redes">
             <a href="#" class="fa fa-facebook"></a>
@@ -22,7 +22,7 @@
         </div>
     </div>
    
-    <header class="header">
+    <header class="header clr-blue-alt">
         <nav class="nav contenedor">
             <input type="checkbox" id="menu" class="nav__input">
             <label for="menu" class="nav__label">
@@ -40,11 +40,13 @@
         </nav>
     </header>
    
-    <section id="inicio">
-        <div class="inicio-left position-relative">
-            <h1>Cristian Magallanes</h1>
-            <p>Asesor Financiero</p>
-
+    <section id="inicio" class="inicio pt-custom">
+        <div class="inicio-left">
+            <h3 class="title-form">Llena el formulario <br> y te contactaré</h3>
+            <div class="profile">
+                <h1>Cristian Magallanes</h1>
+                <p>Asesor Financiero</p>
+            </div>
             <div class="info-cotiza">
                 <img src="resources/img/play.svg" alt="played" width="70" height="70">
                 <button id="openModal" class="btn btn-cotizar">Cotizar</button>
@@ -113,133 +115,59 @@
                         </div>
                     </div>
                 </div>
+            </div>      
+        </div>
+        <div class="inicio-rigth clr-blue">
+            <div class="form-wrapper position-relative">
+                <form class="form-contact clr-blue">
+                    <div class="campo">
+                        <label for="nombre">Nombres y Apellidos*</label>
+                        <input class="input-line" type="text" name="nombre" id="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="nombre">Celular*</label>
+                        <input class="input-line" type="text" name="celular" id="celular">
+                    </div>
+                    <div class="campo">
+                        <label for="nombre">Correo electrónico*</label>
+                        <input class="input-line" type="email" name="email" id="email">
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje*</label>
+                        <input class="input-line" type="text" name="mensaje" id="mensaje">
+                    </div>
+                    <div class="campo">
+                        <input type="submit" value="Enviar" class="btn btn-transparent">
+                    </div>
+                </form>
             </div>
-                
-        </div>
-        <div class="inicio-rigth">
-            <img src="https://via.placeholder.com/640x400" alt="">
         </div>
     </section>
-   
-    <section id="about">
-        <div class="content-about">
-            <h2 class="section-title">Sobre mí</h2>
-            <p>Administrador con especialidad en Banca y Finanzas. Mi experiencia y crecimiento profesional se ha desarrollado en más de 10 años trabajando en empresas del sistema financiero bancario y no bancario, desde atender a clientes en plataformas comerciales, hasta evaluación de créditos y análisis de riesgos en personas naturales, banca PYME y empresas.</p>
-            <p>Actualmente me dedico a la asesoría y consultoría en banca, finanzas, emprendimientos, negocios, empresas e inversiones. Ya sea para mejorar las finanzas de personas naturales o de mejorar la situación económica-financiera de las empresas y hacerlas cada vez más rentables.</p>
-            <p>En mi experiencia he logrado contribuir al crecimiento y desarrollo de las personas y empresas financieramente hablando y estoy convencido que todos pueden alcanzar los niveles de éxito que se propongan, siempre con planificación, una adecuada gestión comercial, gestión financiera,  organización, conocimiento del sistema y procesos en los negocios, pero sobre todo con educación, cultura e inteligencia financiera.</p>
+
+    <section class="horario position-relative">
+        <div class="">
+            <h2 class="h-square">Horarios de atención</h2>
+        </div>
+        <div class="timetable clr-blue">
+                <div class="timetable__info">
+                    <p>Lunes a Viernes</p>
+                    <p>9:00 am - 5:00pm</p>
+                    <p>Sábados</p>
+                    <p>9:00 am - 1:00pm</p>
+                </div>
+                <div class="timetable__clock">
+                    <img src="./resources/img/clock-2.svg">
+                </div>
         </div>
     </section>
-    
-    <section id="services" class="services">
+
+    <section class="ubicacion">
         <div class="section-heading">
-            <h2 class="section-title">Mis servicios</h2>
-            <p class="text-heading">Pongo mi dedicación y conocimiento profesional con cada nuevo cliente para desarrollar impulsos y gestiones financieras impecables.</p>
+            <h2 class="section-title">Ubicación</h2>
+            <p class="text-heading">Dirección: En caso se considere colocar</p>
         </div>
-
-        <div class="contenedor">
-            <div class="contenedor-cards">
-                <div class="card-colum">
-                    <div class="card-ind-service">
-                        <img src="resources/img/reviewing-financial-report-in-returning-on-investment-analysis 1.png" alt="">
-                        <p>Impulsa tus finanzas a corto y largo plazo con el servicio de asesoría financiera.</p>
-                    </div>
-                    <h3>Asesoría Financiera</h3>
-                    <p>Recomendado para empresas y persona naturales.</p>
-                    <a href="" class="btn btn-primario">Cotizar</a>
-                </div>
-                <div class="card-colum">
-                    <di v class="card-ind-service">
-                        <img src="resources/img/home-salesman-stretches-holding-black-pen 1.png" alt="">
-                        <p>Despeja tus dudas financieras y toma las mejores decisiones para hacer crecer tu dinero de una forma profesional.</p>
-                    </di>
-                    <h3>Consultoría Financiera</h3>
-                    <p>Recomendado para persona naturales</p>
-                    <a href="" class="btn btn-primario">Cotizar</a>
-                </div>
-                <div class="card-colum">
-                    <div class="card-ind-service">
-                        <img src="resources/img/stack-of-money-coin-with-trading-graph 1.png" alt="">
-                        <p>Evalúo riesgos financieros y planifico los presupuestos de tu empresa, brindándo un mayor control en la administración de recursos.</p>
-                    </div>
-                    <h3>Gestión Financiera</h3>
-                    <p>Recomendado para empresas.</p>
-                    <a href="" class="btn btn-primario">Cotizar</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="client">
-        <div class="section-heading">
-            <h2 class="section-title">Clientes anteriores</h2>
-            <p class="text-heading">Mi experiencia profesional se ha extendido a distintas empresas ayudando a impulsar el crecimiento de dinero y brindando la asesoría financiera necesaria para el éxito de mis clientes.</p>
-        </div>
-        <div class="carusel">
-            <div class="slider">
-                <div class="slide-track">
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="https://via.placeholder.com/500x200" height="100" width="250" alt="">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2 class="section-title">Contactá conmigo</h2>
-        <div class="banner-contact position-relative">
-           <div class="info-contact">
-               <h3>Cuéntame que buscas y te ayudaré</h3>
-               <a class="btn btn-primario" href="#">Contáctame</a>
-           </div>
-        </div>
-        <div class="section-form">
-            <h3>Inicia el crecimiento financiero que necesitas</h3>
-            <form class="formulario" id="formulario">
-                <div class="campo">
-                    <label for="nombre">Nombres y Apellidos*</label>
-                    <input type="text" name="nombre" id="nombre">
-                </div>
-                <div class="campo">
-                    <label for="nombre">Celular*</label>
-                    <input type="text" name="celular" id="celular">
-                </div>
-                <div class="campo">
-                    <label for="nombre">Ingresa tu correo electrónico*</label>
-                    <div class="campo-submit position-relative">
-                        <input type="email" name="email" id="email">
-                        <input type="submit" value="Enviar" class="btn btn-transparent btn-submit">
-                    </div>
-                </div>
-            </form>
+        <div class="mapa-contenedor" style="margin-bottom: 3rem;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31215.236573921324!2d-77.0595017124165!3d-12.050086560262375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2zTGltYSwgUGVyw7o!5e0!3m2!1ses!2scr!4v1641356266059!5m2!1ses!2scr" width="100%" height="545" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
