@@ -481,7 +481,7 @@ a {
 
 .title-form {
     margin: 2rem 0;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 400;
     line-height: 2rem;
 }
@@ -593,7 +593,7 @@ a {
 
 /* HORARIO SECTION - CONTACTO.HTML */
 .horario {
-    height: 65vh;
+    height: 45vh;
 }
 
 .horario .h-square {
@@ -609,7 +609,7 @@ a {
     position: absolute;
     width: 75%;
     padding: 2.2rem 4rem 2.2rem 1.2rem;
-    top: 18%;
+    top: 27%;
     left: 1.2rem;
 }
 
@@ -646,6 +646,7 @@ a {
     }
 
     .horario {
+        height: 65vh;
         z-index: 1;
     }
 
@@ -689,14 +690,34 @@ a {
     }
 }
 
-/* UBICACION SECTION - CONTACTO.HTML */
 .ubicacion {
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
 
 .ubicacion .section-title {
-    font-size: 2.6rem;
+    font-size: 1.8rem;
 }
+
+.ubicacion .text-heading {
+    font-size: 1.1rem;
+}
+
+/* UBICACION SECTION - CONTACTO.HTML */
+@media screen and (min-width: 768px) {
+    .ubicacion {
+        margin-top: 12rem;
+    }
+    
+    .ubicacion .section-title {
+        font-size: 2.6rem;
+    }
+
+    .ubicacion .text-heading {
+        font-size: 1.9rem;
+    }
+}
+
+
 
 
 /* FORMULARIO COTIZACION */
